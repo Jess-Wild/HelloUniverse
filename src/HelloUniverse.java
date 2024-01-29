@@ -43,7 +43,9 @@ public class HelloUniverse {
         neptune.diametre = 49532;
 
         System.out.println(jupiter.nom + " est une planète " + jupiter.matiere + " avec un diamètre de " + jupiter.diametre + " kilomètres.");
-        
+
+        Planete planeteX = new Planete();
+        System.out.println(planeteX.nom+" est une planète "+planeteX.matiere+" avec un diamètre de "+planeteX.diametre+" kilomètres.");
 
         int nbPlanetes = 7;
 
@@ -67,10 +69,4 @@ public class HelloUniverse {
 
 
     }
-
-    //1600, 1700, 1800, 2006 et 2020
-    //Si inférieur à 1600 ou suppérieur à 2020 inclus = afficher "Le programme ne peut pas fournir de résultat pour l'année <année>"
-    //Si inférieur à 1700 = le nombre de planètes est de 7
-    //Si inférieur à 1800 le nombre de planètes est de 8
-    //Si suppérieur à 2006
 }
