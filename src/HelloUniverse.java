@@ -21,6 +21,7 @@ public class HelloUniverse {
         mars.nom = "Mars";
         mars.matiere = "Tellurique";
         mars.diametre = 6792;
+        mars.rotation();
 
         Planete jupiter = new Planete();
         jupiter.nom = "Jupiter";
@@ -41,6 +42,7 @@ public class HelloUniverse {
         neptune.nom = "Neptune";
         neptune.matiere = "Gazeuse";
         neptune.diametre = 49532;
+        neptune.revolution();
 
         System.out.println(jupiter.nom + " est une planète " + jupiter.matiere + " avec un diamètre de " + jupiter.diametre + " kilomètres.");
 
