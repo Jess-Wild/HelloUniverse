@@ -3,11 +3,13 @@ public class Planete {
     String matiere;
     long diametre;
 
-    void revolution(){
+    int revolution(int angle){
         System.out.println("Je suis la planète " + nom + " et je tourne autour de mon étoile.");
+        return angle / 360;
     }
 
-    void rotation(){
+    int rotation(int angle){
         System.out.println("Je suis la planète " + nom + " et je tourne sur moi-même.");
+        return angle / 360;
     }
 }

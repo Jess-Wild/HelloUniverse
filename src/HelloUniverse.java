@@ -11,6 +11,8 @@ public class HelloUniverse {
         venus.nom = "Venus";
         venus.matiere = "Tellurique";
         venus.diametre = 12100;
+        int rotationResult = venus.rotation(1250);
+        System.out.println(venus.nom + " a effectué " + rotationResult + " tours complets sur elle-même.");
 
         Planete terre = new Planete();
         terre.nom = "Terre";
@@ -21,7 +23,8 @@ public class HelloUniverse {
         mars.nom = "Mars";
         mars.matiere = "Tellurique";
         mars.diametre = 6792;
-        mars.rotation();
+        rotationResult = mars.rotation(-684);
+        System.out.println(mars.nom + " a effectué " + rotationResult + " tours complets sur elle-même.");
 
         Planete jupiter = new Planete();
         jupiter.nom = "Jupiter";
@@ -42,7 +45,8 @@ public class HelloUniverse {
         neptune.nom = "Neptune";
         neptune.matiere = "Gazeuse";
         neptune.diametre = 49532;
-        neptune.revolution();
+        rotationResult = neptune.revolution(-3542);
+        System.out.println(neptune.nom + " a effectué " + rotationResult + " tours complets autour de son étoile.");
 
         System.out.println(jupiter.nom + " est une planète " + jupiter.matiere + " avec un diamètre de " + jupiter.diametre + " kilomètres.");
 
