@@ -13,10 +13,11 @@ public class Planete {
         return angle / 360;
     }
 
+    Atmosphere atmosphere = new Atmosphere();
+
     void accueillirVaisseau(int nbHumains){
         nbTotalVisiteurs = nbTotalVisiteurs + nbHumains;
     };
-
 
     void accueillirVaisseau(String typeVaisseau){
        if (typeVaisseau.equalsIgnoreCase("CHASSEUR")){

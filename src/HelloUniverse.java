@@ -4,52 +4,139 @@ public class HelloUniverse {
 
         int rotationResult;
 
+        /*---MERCURE---*/
         Planete mercure = new Planete();
         mercure.nom = "Mercure";
         mercure.matiere = "Tellurique";
         mercure.diametre= 4880;
+        Atmosphere atmosphereMercure = new Atmosphere();
+        atmosphereMercure.tauxOxygene = 42;
+        atmosphereMercure.tauxSodium = 29;
+        atmosphereMercure.tauxHydrogene = 22;
+        atmosphereMercure.tauxAutreGaz = 7;
+        System.out.println("L'atmosphère de Mercure est composée :");
+        System.out.println("A " + mercure.atmosphere.tauxOxygene + "% d'oxygène. ");
+        System.out.println("A " + mercure.atmosphere.tauxSodium + "% de Sodium. ");
+        System.out.println("A " + mercure.atmosphere.tauxHydrogene + "% d'hydrogène.");
+        System.out.println("A " + mercure.atmosphere.tauxAutreGaz + "% d'autres gaz.");
 
+
+        /*---VENUS---*/
         Planete venus = new Planete();
         venus.nom = "Venus";
         venus.matiere = "Tellurique";
         venus.diametre = 12100;
+        Atmosphere atmosphereVenus = new Atmosphere();
+        atmosphereVenus.tauxDioxydeCarbone = 96;
+        atmosphereVenus.tauxAzote = 3;
+        atmosphereVenus.tauxAutreGaz = 1;
+        venus.atmosphere = atmosphereVenus;
+        System.out.println("L'atmosphère de Venus est composée :");
+        System.out.println("A " + venus.atmosphere.tauxDioxydeCarbone + "% de dioxyde de carbone. ");
+        System.out.println("A " + venus.atmosphere.tauxAzote + "% d'azote. ");
+        System.out.println("A " + venus.atmosphere.tauxAutreGaz + "% d'autres gaz.");
         rotationResult = venus.rotation(1250);
         System.out.println(venus.nom + " a effectué " + rotationResult + " tours complets sur elle-même.");
 
+        /*---LA TERRE---*/
         Planete terre = new Planete();
         terre.nom = "Terre";
         terre.matiere = "Tellurique";
         terre.diametre = 12756;
+        Atmosphere atmosphereTerre = new Atmosphere();
+        atmosphereTerre.tauxAzote = 78;
+        atmosphereTerre.tauxOxygene = 21;
+        atmosphereTerre.tauxArgon = 1;
+        atmosphereTerre.tauxAutreGaz = 1;
+        terre.atmosphere = atmosphereTerre;
+        System.out.println("L'atmosphère de La Terre est composée :");
+        System.out.println("A " + terre.atmosphere.tauxAzote + "% d'azote. ");
+        System.out.println("A " + terre.atmosphere.tauxOxygene + "% d'oxygène. ");
+        System.out.println("A " + terre.atmosphere.tauxArgon + "% d'argon.");
+        System.out.println("A " + terre.atmosphere.tauxAutreGaz + "% d'autres gaz.");
 
+
+        /*---MARS---*/
         Planete mars = new Planete();
         mars.nom = "Mars";
         mars.matiere = "Tellurique";
         mars.diametre = 6792;
+        Atmosphere atmosphereMars = new Atmosphere();
+        atmosphereMars.tauxDioxydeCarbone = 95;
+        atmosphereMars.tauxAzote = 3;
+        atmosphereMars.tauxArgon = 1.5f;
+        atmosphereMars.tauxAutreGaz = 0.5f;
+        mars.atmosphere = atmosphereMars;
+        System.out.println("L'atmosphère de Mars est composée :");
+        System.out.println("A " + mars.atmosphere.tauxDioxydeCarbone + "% de dioxyde de carbone.");
+        System.out.println("A " + mars.atmosphere.tauxAzote + "% d'azote. ");
+        System.out.println("A " + mars.atmosphere.tauxArgon + "% d'argon.");
+        System.out.println("A " + mars.atmosphere.tauxAutreGaz + "% d'autres gaz.");
         rotationResult = mars.rotation(-684);
         System.out.println(mars.nom + " a effectué " + rotationResult + " tours complets sur elle-même.");
         mars.accueillirVaisseau(8);
         mars.accueillirVaisseau("FREGATE");
         System.out.println("Le nombre d'humains ayant déjà séjouré sur " + mars.nom + " est actuellement de " + mars.nbTotalVisiteurs + ".");
 
+        /*---JUPITER---*/
         Planete jupiter = new Planete();
         jupiter.nom = "Jupiter";
         jupiter.matiere = "Gazeuse";
         jupiter.diametre = 142984;
+        Atmosphere atmosphereJupiter = new Atmosphere();
+        atmosphereJupiter.tauxHydrogene = 90;
+        atmosphereJupiter.tauxHelium = 10;
+        atmosphereJupiter.tauxAutreGaz = 1;
+        jupiter.atmosphere = atmosphereJupiter;
+        System.out.println("L'atmosphère de Jupiter est composée :");
+        System.out.println("A " + jupiter.atmosphere.tauxHydrogene + "% d'hydrogène.");
+        System.out.println("A " + jupiter.atmosphere.tauxHelium + "% d'hélium. ");
+        System.out.println("A " + jupiter.atmosphere.tauxAutreGaz + "% d'autres gaz.");
 
+        /*---SATURNE---*/
         Planete saturne = new Planete();
         saturne.nom = "Saturne";
         saturne.matiere = "Gazeuse";
         saturne.diametre = 120536;
+        Atmosphere atmosphereSaturne = new Atmosphere();
+        atmosphereSaturne.tauxHydrogene = 96;
+        atmosphereSaturne.tauxHelium = 3;
+        atmosphereSaturne.tauxAutreGaz = 1;
+        saturne.atmosphere = atmosphereSaturne;
+        System.out.println("L'atmosphère de Saturne est composée :");
+        System.out.println("A " + saturne.atmosphere.tauxHydrogene + "% d'hydrogène.");
+        System.out.println("A " + saturne.atmosphere.tauxHelium + "% d'hélium. ");
+        System.out.println("A " + saturne.atmosphere.tauxAutreGaz + "% d'autres gaz.");
 
+        /*---URANUS---*/
         Planete uranus = new Planete();
         uranus.nom = "Uranus";
         uranus.matiere = "Gazeuse";
         uranus.diametre = 51118;
+        Atmosphere atmosphereUranus = new Atmosphere();
+        atmosphereUranus.tauxHydrogene = 83;
+        atmosphereUranus.tauxHelium = 15;
+        atmosphereUranus.tauxMethane = 2.5f;
+        uranus.atmosphere = atmosphereUranus;
+        System.out.println("L'atmosphère de Uranus est composée :");
+        System.out.println("A " + uranus.atmosphere.tauxHydrogene + "% d'hydrogène.");
+        System.out.println("A " + uranus.atmosphere.tauxHelium + "% d'hélium. ");
+        System.out.println("A " + uranus.atmosphere.tauxMethane + "% de méthane.");
 
+        /*---NEPTUNE---*/
         Planete neptune = new Planete();
         neptune.nom = "Neptune";
         neptune.matiere = "Gazeuse";
         neptune.diametre = 49532;
+        Atmosphere atmosphereNeptune = new Atmosphere();
+        atmosphereNeptune.tauxHydrogene = 80;
+        atmosphereNeptune.tauxHelium = 19;
+        atmosphereNeptune.tauxMethane = 1;
+        neptune.atmosphere = atmosphereNeptune;
+        System.out.println("L'atmosphère de Neptune est composée :");
+        System.out.println("A " + neptune.atmosphere.tauxHydrogene + "% d'hydrogène.");
+        System.out.println("A " + neptune.atmosphere.tauxHelium + "% d'hélium. ");
+        System.out.println("A " + neptune.atmosphere.tauxMethane + "% de méthane.");
         rotationResult = neptune.revolution(-3542);
         System.out.println(neptune.nom + " a effectué " + rotationResult + " tours complets autour de son étoile.");
 
