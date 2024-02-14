@@ -61,6 +61,8 @@ public class HelloUniverse {
         mars.nom = "Mars";
         mars.matiere = "Tellurique";
         mars.diametre = 6792;
+
+        /*---ATMOSPHERE---*/
         Atmosphere atmosphereMars = new Atmosphere();
         atmosphereMars.tauxDioxydeCarbone = 95;
         atmosphereMars.tauxAzote = 3;
@@ -72,11 +74,21 @@ public class HelloUniverse {
         System.out.println("A " + mars.atmosphere.tauxAzote + "% d'azote. ");
         System.out.println("A " + mars.atmosphere.tauxArgon + "% d'argon.");
         System.out.println("A " + mars.atmosphere.tauxAutreGaz + "% d'autres gaz.");
+
+        /*---ROTATION---*/
         rotationResult = mars.rotation(-684);
         System.out.println(mars.nom + " a effectué " + rotationResult + " tours complets sur elle-même.");
-        mars.accueillirVaisseau(8);
-        mars.accueillirVaisseau("FREGATE");
-        System.out.println("Le nombre d'humains ayant déjà séjouré sur " + mars.nom + " est actuellement de " + mars.nbTotalVisiteurs + ".");
+
+        /*---VAISSEAUX---*/
+        Vaisseau premierVaisseau = new Vaisseau();
+        premierVaisseau.type = "FREGATE";
+        premierVaisseau.nbPassagers = 9;
+        Vaisseau enPartance = mars.accueillirVaisseau(premierVaisseau);
+        Vaisseau secondVaisseau = new Vaisseau();
+        secondVaisseau.type = "CROISSEUR";
+        secondVaisseau.nbPassagers = 42;
+        enPartance = mars.accueillirVaisseau(secondVaisseau);
+        System.out.println("Le nombre d'humains ayant déjà séjouré sur " + mars.nom + " est actuellement de " + mars.totalVisiteurs + ".");
 
         /*---JUPITER---*/
         Planete jupiter = new Planete();
