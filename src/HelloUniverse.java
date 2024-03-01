@@ -4,6 +4,8 @@ public class HelloUniverse {
 
         int rotationResult;
 
+        System.out.println("La forme d'une planète est : " + Planete.forme + ".");
+
         /*---MERCURE---*/
         Planete mercure = new Planete();
         mercure.nom = "Mercure";
@@ -61,6 +63,7 @@ public class HelloUniverse {
         mars.nom = "Mars";
         mars.matiere = "Tellurique";
         mars.diametre = 6792;
+        System.out.println("La forme de Mars est : " + mars.forme + ".");
 
         /*---ATMOSPHERE---*/
         Atmosphere atmosphereMars = new Atmosphere();

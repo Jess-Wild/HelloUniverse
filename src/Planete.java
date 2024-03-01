@@ -17,6 +17,8 @@ public class Planete {
 
     Atmosphere atmosphere = new Atmosphere();
 
+    static String forme = "Sphérique";
+
 
     Vaisseau accueillirVaisseau(Vaisseau vaisseau){
 
