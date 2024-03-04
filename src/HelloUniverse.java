@@ -5,6 +5,8 @@ public class HelloUniverse {
         int rotationResult;
 
         System.out.println("La forme d'une planète est : " + Planete.forme + ".");
+        System.out.println(Planete.expansion(10.5));
+        System.out.println(Planete.expansion(14.2));
 
         /*---MERCURE---*/
         Planete mercure = new Planete();
@@ -155,5 +157,6 @@ public class HelloUniverse {
         rotationResult = neptune.revolution(-3542);
         System.out.println(neptune.nom + " a effectué " + rotationResult + " tours complets autour de son étoile.");
 
+        System.out.println("Le nombre de Planète découverte à ce jour est de : " + Planete.nbPlanetesDecouvertes);
     }
 }
