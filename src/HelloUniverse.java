@@ -9,8 +9,8 @@ public class HelloUniverse {
         System.out.println(Planete.expansion(14.2));
 
         /*---MERCURE---*/
-        Planete mercure = new Planete();
-        mercure.nom = "Mercure";
+        Planete mercure = new Planete("Mercure");
+//        mercure.nom = "Mercure";
         mercure.matiere = "Tellurique";
         mercure.diametre= 4880;
         Atmosphere atmosphereMercure = new Atmosphere();
@@ -26,8 +26,8 @@ public class HelloUniverse {
 
 
         /*---VENUS---*/
-        Planete venus = new Planete();
-        venus.nom = "Venus";
+        Planete venus = new Planete("Venus");
+//        venus.nom = "Venus";
         venus.matiere = "Tellurique";
         venus.diametre = 12100;
         Atmosphere atmosphereVenus = new Atmosphere();
@@ -43,8 +43,8 @@ public class HelloUniverse {
         System.out.println(venus.nom + " a effectué " + rotationResult + " tours complets sur elle-même.");
 
         /*---LA TERRE---*/
-        Planete terre = new Planete();
-        terre.nom = "Terre";
+        Planete terre = new Planete("Terre");
+//        terre.nom = "Terre";
         terre.matiere = "Tellurique";
         terre.diametre = 12756;
         Atmosphere atmosphereTerre = new Atmosphere();
@@ -61,8 +61,8 @@ public class HelloUniverse {
 
 
         /*---MARS---*/
-        Planete mars = new Planete();
-        mars.nom = "Mars";
+        Planete mars = new Planete("Mars");
+//        mars.nom = "Mars";
         mars.matiere = "Tellurique";
         mars.diametre = 6792;
         System.out.println("La forme de Mars est : " + mars.forme + ".");
@@ -96,8 +96,8 @@ public class HelloUniverse {
         System.out.println("Le nombre d'humains ayant déjà séjouré sur " + mars.nom + " est actuellement de " + mars.totalVisiteurs + ".");
 
         /*---JUPITER---*/
-        Planete jupiter = new Planete();
-        jupiter.nom = "Jupiter";
+        Planete jupiter = new Planete("Jupiter");
+//        jupiter.nom = "Jupiter";
         jupiter.matiere = "Gazeuse";
         jupiter.diametre = 142984;
         Atmosphere atmosphereJupiter = new Atmosphere();
@@ -111,8 +111,8 @@ public class HelloUniverse {
         System.out.println("A " + jupiter.atmosphere.tauxAutreGaz + "% d'autres gaz.");
 
         /*---SATURNE---*/
-        Planete saturne = new Planete();
-        saturne.nom = "Saturne";
+        Planete saturne = new Planete("Saturne");
+//        saturne.nom = "Saturne";
         saturne.matiere = "Gazeuse";
         saturne.diametre = 120536;
         Atmosphere atmosphereSaturne = new Atmosphere();
@@ -126,8 +126,8 @@ public class HelloUniverse {
         System.out.println("A " + saturne.atmosphere.tauxAutreGaz + "% d'autres gaz.");
 
         /*---URANUS---*/
-        Planete uranus = new Planete();
-        uranus.nom = "Uranus";
+        Planete uranus = new Planete("Uranus");
+//        uranus.nom = "Uranus";
         uranus.matiere = "Gazeuse";
         uranus.diametre = 51118;
         Atmosphere atmosphereUranus = new Atmosphere();
@@ -141,8 +141,8 @@ public class HelloUniverse {
         System.out.println("A " + uranus.atmosphere.tauxMethane + "% de méthane.");
 
         /*---NEPTUNE---*/
-        Planete neptune = new Planete();
-        neptune.nom = "Neptune";
+        Planete neptune = new Planete("Neptune");
+//        neptune.nom = "Neptune";
         neptune.matiere = "Gazeuse";
         neptune.diametre = 49532;
         Atmosphere atmosphereNeptune = new Atmosphere();

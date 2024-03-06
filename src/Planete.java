@@ -1,10 +1,11 @@
 public class Planete {
+
+    static String forme = "Sphérique";
+    static int nbPlanetesDecouvertes = 0;
     String nom;
     String matiere;
     long diametre;
-
     int totalVisiteurs;
-
     Vaisseau vaisseauAmmarer;
 
     int revolution(int angle){
@@ -17,11 +18,8 @@ public class Planete {
 
     Atmosphere atmosphere = new Atmosphere();
 
-    static String forme = "Sphérique";
-
-    static int nbPlanetesDecouvertes = 0;
-
-    Planete(){
+    Planete(String nom){
+        this.nom = nom;
         nbPlanetesDecouvertes++;
     }
 
