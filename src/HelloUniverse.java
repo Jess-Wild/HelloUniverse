@@ -158,5 +158,23 @@ public class HelloUniverse {
         System.out.println(neptune.nom + " a effectué " + rotationResult + " tours complets autour de son étoile.");
 
         System.out.println("Le nombre de Planète découverte à ce jour est de : " + Planete.nbPlanetesDecouvertes);
+
+        VaisseauDeGuerre chasseur = new VaisseauDeGuerre();
+        chasseur.type = "CHASSEUR";
+        chasseur.blindage = 156;
+        chasseur.resistanceDuBouclier = 2;
+
+        VaisseauCivil vaisseauMonde = new VaisseauCivil();
+        vaisseauMonde.type = "VAISSEAU-MONDE";
+        vaisseauMonde.blindage = 4784;
+        vaisseauMonde.resistanceDuBouclier = 30;
+
+        vaisseauMonde.activerBouclier();
+        chasseur.activerBouclier();
+        chasseur.attaque(vaisseauMonde, "lasers photoniques", 3);
+        vaisseauMonde.desactiverBouclier();
+        System.out.println("La resistance du bouclier du VAISSEAU-MONDE est de : " + vaisseauMonde.resistanceDuBouclier );
+        System.out.println("Le blindage du VAISSEAU-MONDE est de : " + vaisseauMonde.blindage);
+
     }
 }
